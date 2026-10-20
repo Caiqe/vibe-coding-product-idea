@@ -31,7 +31,7 @@ O Resultado foi um site minimalista e com estética agrádavel.
 
 ### Uso de IA
 
-Foi utilizado o Claude (Internet Chat) para geração de plano e levantamento de requisitos.
+Foi utilizado o Claude (Internet Chat) para geração de plano e levantamento de requisitos em arquivo MarkDown.
 Foi utilizado GPT (Internet Chat) para geração de imagens personalizadas.
 Foi Utilizado o modelo GPT-5.6-sol para implementação da ideia e incremento de funcionalidades.
 
