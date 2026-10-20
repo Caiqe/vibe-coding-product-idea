@@ -39,9 +39,16 @@ Foi Utilizado o modelo GPT-5.6-sol para implementação da ideia e incremento de
 
 A solução surgiu de uma conversa incremental por meio do Claude, de forma que foi realizado o planejamento por meio de uma conversa, ele me mandava dúvidas e nós decidiamos o que devia ser feito. Isso nos gerou o .md responsável pela implementação da ideia.
 
+- Foram alterados o tom das escritas da página para que fosse vendido com um produto sério e não uma piada.
+- Foram alteradas as cores durante o desenvolvimento.
+
 ### Resultado final
 
+O resultado foi surpreendente e satisfatório.
+
 O resultado final foi uma landing page profissional para a apresentação e venda de um produto. A aplicação conta com uma apresentação moderna e com UX agrádavel, além de um formulário de venda fícticio para concluir a compra do produto.
+
+Com mais tempo, gostariamos de ajustar alguns detalhes pontuais em questão de layout e implementar mais funcionalidades para explorar o uso da IA.
 
 ## Como rodar o projeto
 
