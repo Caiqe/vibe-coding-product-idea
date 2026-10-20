@@ -1,0 +1,9 @@
+.header { background: rgba(244, 243, 239, .9); border-bottom: 1px solid rgba(222, 221, 216, .7); position: sticky; top: 0; backdrop-filter: blur(14px); z-index: 20; }
+.inner { align-items: center; display: flex; height: 4.5rem; justify-content: space-between; }
+.logo { font-size: 1.25rem; font-weight: 750; letter-spacing: -.05em; }
+.logo span { color: var(--color-accent); }
+.inner nav { display: none; gap: var(--space-5); }
+.inner nav a { color: var(--color-muted); font-size: .88rem; transition: color var(--transition); }
+.inner nav a:hover { color: var(--color-ink); }
+.buy { padding: .65rem 1rem; }
+@media (min-width: 768px) { .inner nav { display: flex; } }

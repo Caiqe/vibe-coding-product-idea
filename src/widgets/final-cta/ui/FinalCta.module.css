@@ -1,0 +1,5 @@
+.section { padding: 0 0 var(--space-8); }
+.card { align-items: center; background: var(--color-accent); border-radius: calc(var(--radius-lg) + .5rem); color: white; display: flex; flex-direction: column; padding: var(--space-7) var(--space-4); text-align: center; }
+.card > p { font-size: .72rem; font-weight: 750; letter-spacing: .15em; text-transform: uppercase; }
+.card h2 { font-size: clamp(2.3rem, 7vw, 5rem); font-weight: 480; letter-spacing: -.065em; line-height: .98; max-width: 50rem; }
+.card > span { color: #dbe2ff; margin-bottom: var(--space-5); }

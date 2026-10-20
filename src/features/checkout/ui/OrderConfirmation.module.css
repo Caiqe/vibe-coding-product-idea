@@ -1,0 +1,6 @@
+.confirmation { padding: var(--space-6) var(--space-4); text-align: center; }
+.check { align-items: center; background: var(--color-soft-blue); border-radius: 50%; color: var(--color-accent); display: flex; font-size: 1.5rem; height: 4rem; justify-content: center; margin: 0 auto var(--space-4); width: 4rem; }
+.eyebrow { color: var(--color-accent); font-size: .75rem; font-weight: 750; letter-spacing: .12em; margin-bottom: .4rem; text-transform: uppercase; }
+.confirmation h2 { font-size: 2.5rem; letter-spacing: -.04em; margin-bottom: var(--space-3); }
+.confirmation > p:not(.eyebrow) { color: var(--color-muted); }
+.summary { border-block: 1px solid var(--color-line); display: flex; gap: var(--space-3); justify-content: space-between; margin: var(--space-5) 0; padding: var(--space-4) 0; text-align: left; }

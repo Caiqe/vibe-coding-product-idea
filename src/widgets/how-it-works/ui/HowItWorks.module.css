@@ -1,0 +1,8 @@
+.section { background: var(--color-ink); color: white; padding: var(--space-8) 0; }
+.steps { counter-reset: steps; display: grid; gap: var(--space-4); }
+.steps article { border-top: 1px solid #424348; padding-top: var(--space-4); }
+.steps span { color: #8da5ff; font-size: .78rem; }
+.steps h3 { font-size: 1.1rem; margin: var(--space-5) 0 var(--space-2); }
+.steps p { color: #aeb0b6; font-size: .9rem; margin: 0; }
+@media (min-width: 640px) { .steps { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .steps { grid-template-columns: repeat(4, 1fr); } }

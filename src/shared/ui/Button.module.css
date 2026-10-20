@@ -1,0 +1,10 @@
+.button { border: 1px solid transparent; border-radius: var(--radius-pill); cursor: pointer; font-weight: 650; padding: .85rem 1.25rem; transition: transform var(--transition), background var(--transition), border-color var(--transition); }
+.button:hover { transform: translateY(-2px); }
+.primary { background: var(--color-accent); color: white; }
+.primary:hover { background: var(--color-accent-dark); }
+.dark { background: var(--color-ink); color: white; }
+.dark:hover { background: #303134; }
+.secondary { background: transparent; border-color: var(--color-line); color: var(--color-ink); }
+.secondary:hover { border-color: var(--color-ink); }
+.light { background: white; color: var(--color-ink); }
+.button:disabled { cursor: wait; opacity: .65; transform: none; }

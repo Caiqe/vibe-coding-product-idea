@@ -1,0 +1,16 @@
+.hero { overflow: hidden; padding: var(--space-6) 0 var(--space-7); }
+.grid { display: grid; gap: var(--space-6); }
+.copy { animation: intro 750ms ease both; align-self: center; }
+.kicker { color: var(--color-accent); font-size: .75rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+.copy h1 { font-size: clamp(3rem, 9vw, 6.3rem); font-weight: 480; letter-spacing: -.075em; line-height: .94; margin-bottom: var(--space-4); max-width: 50rem; }
+.lead { color: var(--color-muted); font-size: clamp(1.05rem, 2vw, 1.3rem); max-width: 34rem; }
+.actions { align-items: center; display: flex; flex-wrap: wrap; gap: var(--space-4); margin: var(--space-5) 0; }
+.actions a { font-size: .9rem; font-weight: 650; }
+.actions a span { color: var(--color-accent); margin-left: .4rem; }
+.detail { color: var(--color-muted); font-size: .82rem; }
+.visual { animation: intro 750ms 120ms ease both; background: #deddd8; border-radius: var(--radius-lg); min-height: 24rem; overflow: hidden; position: relative; }
+.visual img { aspect-ratio: 4 / 3; }
+.badge { background: rgba(255, 255, 255, .9); border-radius: 50%; height: 5.5rem; padding-top: 1.25rem; position: absolute; right: 1rem; text-align: center; top: 1rem; width: 5.5rem; z-index: 2; }
+.badge small { color: var(--color-muted); font-size: .64rem; }
+@keyframes intro { from { opacity: 0; transform: translateY(22px); } }
+@media (min-width: 900px) { .hero { padding: var(--space-7) 0 var(--space-8); } .grid { align-items: center; grid-template-columns: 1.05fr .95fr; } .visual { min-height: 34rem; } .visual img { aspect-ratio: auto; } }

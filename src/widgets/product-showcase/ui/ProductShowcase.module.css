@@ -1,0 +1,8 @@
+.section { padding: var(--space-8) 0; }
+.grid { display: grid; gap: var(--space-4); }
+.grid figure { margin: 0; }
+.image { aspect-ratio: 4 / 3; background: #e6e4df; border-radius: var(--radius-lg); overflow: hidden; }
+.grid figcaption { display: flex; gap: var(--space-4); justify-content: space-between; padding: var(--space-3) .2rem; }
+.grid figcaption span { color: var(--color-accent); font-size: .72rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+.grid figcaption p { color: var(--color-muted); font-size: .85rem; margin: 0; max-width: 19rem; text-align: right; }
+@media (min-width: 700px) { .grid { grid-template-columns: 1fr 1fr; } .wide { grid-column: 1 / -1; } .wide .image { aspect-ratio: 2 / 1; } }

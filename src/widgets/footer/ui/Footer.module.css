@@ -1,0 +1,10 @@
+.footer { background: var(--color-ink); color: white; padding: var(--space-6) 0 var(--space-5); }
+.top, .bottom { display: flex; flex-direction: column; gap: var(--space-4); }
+.top { border-bottom: 1px solid #38393d; padding-bottom: var(--space-6); }
+.logo { font-size: 1.25rem; font-weight: 750; }
+.logo span { color: #8da5ff; }
+.top nav { display: flex; flex-wrap: wrap; gap: var(--space-3) var(--space-5); }
+.top nav a, .bottom { color: #afb0b5; font-size: .82rem; }
+.bottom { justify-content: space-between; padding-top: var(--space-4); }
+.bottom p { margin: 0; }
+@media (min-width: 700px) { .top, .bottom { align-items: center; flex-direction: row; justify-content: space-between; } }

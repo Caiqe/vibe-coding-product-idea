@@ -1,0 +1,5 @@
+.card { border-top: 1px solid var(--color-line); padding: var(--space-4) 0 var(--space-5); transition: transform var(--transition); }
+.card:hover { transform: translateY(-4px); }
+.card span { color: var(--color-accent); font-size: .75rem; font-weight: 700; }
+.card h3 { font-size: 1.2rem; margin: var(--space-4) 0 var(--space-2); }
+.card p { color: var(--color-muted); margin: 0; }
