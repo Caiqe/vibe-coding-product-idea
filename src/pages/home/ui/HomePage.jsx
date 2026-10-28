@@ -16,8 +16,9 @@ export function HomePage() {
   const [isCheckoutOpen, setCheckoutOpen] = useState(false)
   const openCheckout = () => setCheckoutOpen(true)
   return <div className={styles.page}>
+    <a className="skipLink" href="#conteudo-principal">Pular para o conteúdo</a>
     <Header onBuy={openCheckout} />
-    <main><Hero onBuy={openCheckout} /><Benefits /><ProductShowcase /><HowItWorks /><Testimonials /><Offer onBuy={openCheckout} /><Faq /><FinalCta onBuy={openCheckout} /></main>
+    <main id="conteudo-principal" tabIndex="-1"><Hero onBuy={openCheckout} /><Benefits /><ProductShowcase /><HowItWorks /><Testimonials /><Offer onBuy={openCheckout} /><Faq /><FinalCta onBuy={openCheckout} /></main>
     <Footer />
     <CheckoutModal isOpen={isCheckoutOpen} onClose={() => setCheckoutOpen(false)} />
   </div>

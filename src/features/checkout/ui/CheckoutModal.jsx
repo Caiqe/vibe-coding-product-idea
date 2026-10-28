@@ -7,15 +7,30 @@ import styles from './CheckoutModal.module.css'
 
 export function CheckoutModal({ isOpen, onClose }) {
   const dialogRef = useRef(null)
+  const previousFocusRef = useRef(null)
   const checkout = useCheckout()
   useLockBodyScroll(isOpen)
 
   useEffect(() => {
     if (!isOpen) return undefined
-    const closeOnEscape = (event) => { if (event.key === 'Escape') onClose() }
-    document.addEventListener('keydown', closeOnEscape)
+    previousFocusRef.current = document.activeElement
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') onClose()
+      if (event.key !== 'Tab') return
+      const focusable = [...dialogRef.current.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')].filter((element) => !element.disabled && element.getAttribute('aria-hidden') !== 'true')
+      if (!focusable.length) return
+      const first = focusable[0]
+      const last = focusable.at(-1)
+      if (document.activeElement === dialogRef.current || !dialogRef.current.contains(document.activeElement)) { event.preventDefault(); (event.shiftKey ? last : first).focus() }
+      else if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus() }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus() }
+    }
+    document.addEventListener('keydown', handleKeyDown)
     dialogRef.current?.focus()
-    return () => document.removeEventListener('keydown', closeOnEscape)
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown)
+      previousFocusRef.current?.focus()
+    }
   }, [isOpen, onClose])
 
   if (!isOpen) return null
