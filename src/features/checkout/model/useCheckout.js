@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { validateCheckout } from './validation'
 
-const initialValues = { name: '', email: '', quantity: 1, outlet: '', distance: '', payment: '', aware: false }
+const initialValues = { name: '', email: '', phone: '', quantity: 1, message: '', outlet: '', distance: '', payment: '', aware: false }
 
 export function useCheckout() {
   const [values, setValues] = useState(initialValues)
